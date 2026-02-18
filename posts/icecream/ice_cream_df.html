@@ -403,13 +403,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><code>size</code> household size</p></li>
 <li><p><code>used coupon</code> if coupon was used or not</p></li>
 <li><p><code>coupon per item</code> how much the coupon was</p></li>
-<li><p>`region`` Where it was (Central, West, South, East)</p></li>
+<li><p><code>region</code> Where it was (Central, West, South, East)</p></li>
 <li><p><code>married</code> If they are married or not</p></li>
 <li><p><code>race</code> The race of the household</p></li>
 </ul>
 </section>
 <section id="distribution-of-icecream-price" class="level2">
 <h2 class="anchored" data-anchor-id="distribution-of-icecream-price">Distribution of Icecream Price</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ice_cream,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">mapping =</span> </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>         <span class="fu">aes</span>(<span class="at">x =</span> priceper1)) <span class="sc">+</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">binwidth =</span> <span class="dv">2</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">fill =</span> <span class="st">'orange'</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="st">'darkorange'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="ice_cream_df_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 </section>

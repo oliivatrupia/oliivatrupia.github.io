@@ -438,13 +438,13 @@
     "href": "posts/icecream/ice_cream_df.html#variable-description-for-ice_cream-data.frame",
     "title": "Ben and Jerrys",
     "section": "Variable Description for ice_cream data.frame",
-    "text": "Variable Description for ice_cream data.frame\nThe following describes the variables in the ice_cream data.frame.\n\nflavors List of flavors\nprice Price of the ice cream\nsize Size of ice cream\nid household id\nsize household size\nused coupon if coupon was used or not\ncoupon per item how much the coupon was\n`region`` Where it was (Central, West, South, East)\nmarried If they are married or not\nrace The race of the household"
+    "text": "Variable Description for ice_cream data.frame\nThe following describes the variables in the ice_cream data.frame.\n\nflavors List of flavors\nprice Price of the ice cream\nsize Size of ice cream\nid household id\nsize household size\nused coupon if coupon was used or not\ncoupon per item how much the coupon was\nregion Where it was (Central, West, South, East)\nmarried If they are married or not\nrace The race of the household"
   },
   {
     "objectID": "posts/icecream/ice_cream_df.html#distribution-of-icecream-price",
     "href": "posts/icecream/ice_cream_df.html#distribution-of-icecream-price",
     "title": "Ben and Jerrys",
     "section": "Distribution of Icecream Price",
-    "text": "Distribution of Icecream Price"
+    "text": "Distribution of Icecream Price\n\nggplot(data = ice_cream,\n       mapping = \n         aes(x = priceper1)) + \n  geom_histogram(\n    binwidth = 2,\n    fill = 'orange',\n    color = 'darkorange')"
   }
 ]
