@@ -73,7 +73,7 @@ if coupon was used or not
 - `coupon per item`
 how much the coupon was
 
-- `region``
+- `region`
 Where it was (Central, West, South, East)
 
 - `married`
@@ -86,8 +86,13 @@ The race of the household
 ## Distribution of Icecream Price
 
 ```{r}
-
-
+ggplot(data = ice_cream,
+       mapping = 
+         aes(x = priceper1)) + 
+  geom_histogram(
+    binwidth = 2,
+    fill = 'orange',
+    color = 'darkorange')
 ```
 
 
