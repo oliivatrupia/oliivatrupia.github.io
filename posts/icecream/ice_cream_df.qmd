@@ -1,0 +1,93 @@
+---
+title: Ben and Jerrys
+author: Olivia Trupia
+date: 2026-02-17
+categories: [ben and jerrys, code, analysis]
+image: benjerry.png
+
+execute: 
+  warning: false
+  message: false
+  
+toc: true
+---
+```{r}
+#| include: false
+
+# library(knitr)
+library(rmarkdown)
+library(tidyverse)
+# library(ggplot2)
+# library(readr)
+# library(dplyr)
+
+theme_set(theme_minimal()+
+          theme(strip.background =element_rect(fill="lightgray"),
+                axis.title.x  = element_text(angle = 0,
+                                            size = rel(1.5),
+                                            margin = margin(10,0,0,0)),
+                axis.title.y  = element_text(angle = 0,
+                                            size = rel(1.5),
+                                            margin = margin(0,10,0,0))
+                )
+          )
+```
+
+Let's analyze the `ice_cream` data:
+
+```{r}
+ice_cream <- read_csv("https://bcdanl.github.io/data/ben-and-jerry-cleaned.csv")
+```
+
+
+```{r}
+#| results: asis
+rmarkdown::paged_table(ice_cream) 
+```
+
+
+
+## Variable Description for `ice_cream` data.frame
+
+The following describes the variables in the `ice_cream` data.frame.
+
+
+- `flavors`
+List of flavors
+
+- `price`
+Price of the ice cream
+
+- `size`
+Size of ice cream
+
+- `id`
+household id
+
+- `size`
+household size
+
+- `used coupon`
+if coupon was used or not
+
+- `coupon per item`
+how much the coupon was
+
+- `region``
+Where it was (Central, West, South, East)
+
+- `married`
+If they are married or not
+
+- `race`
+The race of the household
+
+
+## Distribution of Icecream Price
+
+```{r}
+
+
+```
+
+
